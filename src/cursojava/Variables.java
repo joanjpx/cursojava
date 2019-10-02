@@ -8,6 +8,9 @@ public class Variables {
 		//Vars
 		byte edad;
 		edad = 35;
+
+		System.out.print(edad);
+		edad = 75;
 		System.out.print(edad);
 	}
 
