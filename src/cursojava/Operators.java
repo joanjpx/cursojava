@@ -15,13 +15,15 @@ public class Operators {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a = 1;
-		int b;
-		b = 2;
+		double a = 5;
+		double b;
+		b = 7;
 		
-		int c = a+b;
-		c++;
-		c-=6;
+		//int c = a+b;
+		double c = b/a;
+		//c++;
+		//c+=6;
+		//c-=5;
 		
 		System.out.println(c);
 
