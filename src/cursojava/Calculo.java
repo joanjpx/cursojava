@@ -14,9 +14,15 @@ public class Calculo {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double raiz = Math.sqrt(16);
+		double a = 3.6;
 		
-		System.out.println(raiz);
+		double raiz = Math.sqrt(16);
+		double redondeo = Math.round(a);
+		double potencia = Math.pow(a,1);
+		
+		//Usando "Refundicion" -  Forzar Tipo
+		int entero = (int)potencia;
+		System.out.println(entero);
 	}
 
 }
