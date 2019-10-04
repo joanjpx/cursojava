@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VSClass",
+            "request": "launch",
+            "mainClass": "cursojava.VSClass",
+            "projectName": "cursojava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Operators",
+            "request": "launch",
+            "mainClass": "cursojava.Operators",
+            "projectName": "cursojava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeraClase",
+            "request": "launch",
+            "mainClass": "cursojava.PrimeraClase",
+            "projectName": "cursojava"
+        }
+    ]
+}
