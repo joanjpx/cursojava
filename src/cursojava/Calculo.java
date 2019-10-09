@@ -8,7 +8,6 @@ package cursojava;
  *
  */
 public class Calculo {
-
 	/**
 	 * @param args
 	 */
