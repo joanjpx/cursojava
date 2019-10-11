@@ -15,8 +15,8 @@ public class Calculo {
 		// TODO Auto-generated method stub
 		double a = 3.6;
 		
-		double raiz = Math.sqrt(16);
-		double redondeo = Math.round(a);
+		//double raiz = Math.sqrt(16);
+		//double redondeo = Math.round(a);
 		double potencia = Math.pow(a,1);
 		
 		//Usando "Refundicion" -  Forzar Tipo
