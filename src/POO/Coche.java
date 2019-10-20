@@ -9,12 +9,17 @@ package POO;
  */
 public class Coche {
 	
+	//Accesibles solo desde esta clase
 	private String marca;
 	private String modelo;
 	private String ruedas;
 	private int ancho;
 	private int alto;
 	private boolean x4;
+	
+	//Accesibles publicamente
+	public String placa;
+	String [][] propietario = new String[1][2];
 	
 	public Coche() //same name as the class
 	{
@@ -24,6 +29,8 @@ public class Coche {
 		ancho = 5;
 		alto = 2;
 		x4 = true;
+		propietario[0][0]= "000000";
+		propietario[0][1]= "admin";
 	}
 	
 	public void setMarca(String marca){

@@ -4,12 +4,18 @@ import POO.Coche;
 public class Uso_Coche {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Coche nuevo = new Coche(); //Instance of new class "Coche"
 		
-		nuevo.setMarca("FORD");
+		//Instance of new class "Coche"
 		
-		System.out.println(nuevo.getMarca());
+		Coche cocheJoan = new Coche(); 
+		
+		Coche cocheLiz = new Coche();
+		
+		cocheJoan.setMarca("FORD");
+		
+		cocheLiz.setMarca("FERRARI");
+		
+		System.out.println(cocheJoan.propietario[0][1]);
 		
 	}
 
