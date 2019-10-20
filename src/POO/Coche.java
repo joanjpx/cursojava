@@ -9,12 +9,12 @@ package POO;
  */
 public class Coche {
 	
-	String marca;
-	String modelo;
-	String ruedas;
-	int ancho;
-	int alto;
-	boolean x4;
+	private String marca;
+	private String modelo;
+	private String ruedas;
+	private int ancho;
+	private int alto;
+	private boolean x4;
 	
 	public Coche() //same name as the class
 	{
@@ -26,6 +26,22 @@ public class Coche {
 		x4 = true;
 	}
 	
+	public void setMarca(String marca){
+		this.marca = marca;
+	}
 	
+	public String getMarca()
+	{
+		return this.marca;
+	}
+	
+	/*public static void main(String[] args) {
 
+		Coche nuevo = new Coche(); //Instance of new class "Coche"
+		
+		nuevo.Arranca("CHEVROLET");
+		
+		System.out.println(nuevo.marca);
+		
+	}*/
 }

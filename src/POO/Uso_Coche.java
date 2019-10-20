@@ -7,8 +7,9 @@ public class Uso_Coche {
 		// TODO Auto-generated method stub
 		Coche nuevo = new Coche(); //Instance of new class "Coche"
 		
-		System.out.println(nuevo.marca);
+		nuevo.setMarca("FORD");
 		
+		System.out.println(nuevo.getMarca());
 		
 	}
 
