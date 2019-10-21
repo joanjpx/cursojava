@@ -15,7 +15,7 @@ public class Coche {
 	private String ruedas;
 	private int ancho;
 	private int alto;
-	private boolean x4;
+	private boolean x4, asientosCuero;
 	
 	//Accesibles publicamente
 	public String placa;
@@ -29,6 +29,7 @@ public class Coche {
 		ancho = 5;
 		alto = 2;
 		x4 = true;
+		asientosCuero = true;
 		propietario[0][0]= "000000";
 		propietario[0][1]= "admin";
 	}
