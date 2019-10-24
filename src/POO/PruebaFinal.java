@@ -8,9 +8,9 @@ public class PruebaFinal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Empleados empleado1 = new Empleados("Joan");
+		Empleados empleado1 = new Empleados("Joan",1);
 		empleado1.changeSection("Sistemas");
-		System.out.println(returnEmpleadoObject(empleado1));
+		//System.out.println(returnEmpleadoObject(empleado1));
 		System.out.println(empleado1.getDataEmpleado());
 	}
 
@@ -23,11 +23,11 @@ public class PruebaFinal {
 
 class Empleados{
 	
-	private final String name;
+	private String name;
 	private String section;
-	private int code;
+	private final int code;
 	
-	public Empleados(String nombre)
+	public Empleados(String nombre,int id)
 	{
 		this.name = nombre;
 		this.section = "Administracion";
@@ -37,7 +37,11 @@ class Empleados{
 	public void changeSection(String section)
 	{
 		this.section = section;
-		this.code = this.code+1;
+	}
+
+	public void setCodeEmployee(int id)
+	{
+		//this.code = id;
 	}
 	
 	public String getDataEmpleado()
