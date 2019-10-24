@@ -23,7 +23,7 @@ public class PruebaFinal {
 
 class Empleados{
 	
-	private String name;
+	private final String name;
 	private String section;
 	private int code;
 	
