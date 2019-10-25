@@ -17,10 +17,15 @@ public class PruebaFinal {
 			misEmpleados[3] = new Empleados("Katia",1);
 		misEmpleados[0].changeSection("Sistemas");
 		//System.out.println(returnEmpleadoObject(empleado1));
+		/*
 		System.out.println(misEmpleados[0].getDataEmpleado());
 		System.out.println(misEmpleados[1].getDataEmpleado());
 		System.out.println(misEmpleados[2].getDataEmpleado());
 		System.out.println(misEmpleados[3].getDataEmpleado());
+		*/
+		for (Empleados e: misEmpleados){
+			System.out.println(e.getDataEmpleado());
+		}
 	}
 
 	public static Empleados returnEmpleadoObject(Empleados empleado)
