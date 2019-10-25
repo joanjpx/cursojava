@@ -10,14 +10,17 @@ public class PruebaFinal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Empleados empleado1 = new Empleados("Joan",1);
-		Empleados empleado2 = new Empleados("Liz",1);
-		Empleados empleado3 = new Empleados("Irving",1);
-		empleado1.changeSection("Sistemas");
+		Empleados[] misEmpleados = new Empleados[4];
+			misEmpleados[0] = new Empleados("Joan",1);
+			misEmpleados[1] = new Empleados("Liz",1);
+			misEmpleados[2] = new Empleados("Irving",1);
+			misEmpleados[3] = new Empleados("Katia",1);
+		misEmpleados[0].changeSection("Sistemas");
 		//System.out.println(returnEmpleadoObject(empleado1));
-		System.out.println(empleado1.getDataEmpleado());
-		System.out.println(empleado2.getDataEmpleado());
-		System.out.println(empleado3.getDataEmpleado());
+		System.out.println(misEmpleados[0].getDataEmpleado());
+		System.out.println(misEmpleados[1].getDataEmpleado());
+		System.out.println(misEmpleados[2].getDataEmpleado());
+		System.out.println(misEmpleados[3].getDataEmpleado());
 	}
 
 	public static Empleados returnEmpleadoObject(Empleados empleado)
