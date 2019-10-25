@@ -16,7 +16,8 @@ public class Uso_Coche {
 		cocheJoan.setMarca("FORD");
 		
 		cocheLiz.setMarca("FERRARI");
-		
+
+		furgon.setMarca("HYUNDAI");
 		//System.out.println(cocheJoan.propietario[0][1]);
 		System.out.println(furgon.getMarca());
 		
