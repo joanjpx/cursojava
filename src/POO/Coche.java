@@ -38,18 +38,7 @@ public class Coche {
 		this.marca = marca;
 	}
 	
-	public String getMarca()
-	{
+	public String getMarca() {
 		return this.marca;
 	}
-	
-	/*public static void main(String[] args) {
-
-		Coche nuevo = new Coche(); //Instance of new class "Coche"
-		
-		nuevo.Arranca("CHEVROLET");
-		
-		System.out.println(nuevo.marca);
-		
-	}*/
 }

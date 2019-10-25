@@ -10,12 +10,15 @@ public class Uso_Coche {
 		Coche cocheJoan = new Coche(); 
 		
 		Coche cocheLiz = new Coche();
-		
+
+		Furgoneta furgon = new Furgoneta();
+
 		cocheJoan.setMarca("FORD");
 		
 		cocheLiz.setMarca("FERRARI");
 		
-		System.out.println(cocheJoan.propietario[0][1]);
+		//System.out.println(cocheJoan.propietario[0][1]);
+		System.out.println(furgon.getMarca());
 		
 	}
 
