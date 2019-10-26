@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Uso_Coche",
+            "request": "launch",
+            "mainClass": "POO.Uso_Coche",
+            "projectName": "cursojava"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PruebaFinal",
             "request": "launch",
             "mainClass": "POO.PruebaFinal",
