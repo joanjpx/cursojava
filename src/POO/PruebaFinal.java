@@ -14,8 +14,12 @@ public class PruebaFinal {
 			misEmpleados[0] = new Empleados("Joan",1);
 			misEmpleados[1] = new Empleados("Liz",1);
 			misEmpleados[2] = new Empleados("Irving",1);
-			misEmpleados[3] = new Empleados("Katia",1);
+			misEmpleados[3] = new Jefe("Katia",1);
+			Jefe jefeCastTest = (Jefe)misEmpleados[3];
+			jefeCastTest.setAumento(100);
 		misEmpleados[0].changeSection("Sistemas");
+
+
 		//System.out.println(returnEmpleadoObject(empleado1));
 		/*
 		System.out.println(misEmpleados[0].getDataEmpleado());
@@ -39,6 +43,7 @@ class Empleados{
 	
 	private String name;
 	private String section;
+	protected float sueldo;
 	//FINAL para indicar que no será modificada una vez seteada
 	private final int code;
 	//STATIC para Volver ID unica entre las diferentes instancias de clase.
@@ -52,6 +57,7 @@ class Empleados{
 		this.code = code;
 		this.id = idSiguiente;
 		this.idSiguiente++;
+		this.sueldo = 1300;
 	}
 	/*
 	*	@param String section
@@ -70,8 +76,23 @@ class Empleados{
 	
 	public String getDataEmpleado()
 	{
-		return "Nombre: "+name+" - Seccion: "+section+" COD:"+code+" ID:"+id;
+		return "Nombre: "+name+" - Seccion: "+section+" COD:"+code+" ID:"+id+" Sueldo:"+sueldo;
 	}
 	
 	
+}
+
+class Jefe extends Empleados{
+	/*
+	*	@constructor (String, int)
+	*/
+	public Jefe(String nombre,int code)
+	{
+		super(nombre,code);
+	}
+
+	public void setAumento(int percent)
+	{
+		sueldo = sueldo+(sueldo*percent/100);
+	}
 }
