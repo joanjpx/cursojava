@@ -16,7 +16,7 @@ public class PruebaFinal {
 			misEmpleados[2] = new Empleados("Irving",1);
 			misEmpleados[3] = new Jefe("Katia",1);
 			Jefe jefeCastTest = (Jefe)misEmpleados[3];
-			jefeCastTest.setAumento(100);
+			jefeCastTest.setAumento(50);
 		misEmpleados[0].changeSection("Sistemas");
 
 
