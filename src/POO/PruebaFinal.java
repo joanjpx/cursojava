@@ -5,11 +5,11 @@ import javax.swing.JOptionPane;
 public class PruebaFinal {
 
 	public PruebaFinal() {
-		// TODO Auto-generated constructor stub
+		//code..
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Empleados[] misEmpleados = new Empleados[4];
 			misEmpleados[0] = new Empleados("Joan",1);
 			misEmpleados[1] = new Empleados("Liz",1);
@@ -82,7 +82,7 @@ class Empleados{
 	
 }
 
-class Jefe extends Empleados{
+final class Jefe extends Empleados{ //using final to stop heritage from Jefe class
 	/*
 	*	@constructor (String, int)
 	*/
