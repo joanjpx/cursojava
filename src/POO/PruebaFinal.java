@@ -1,6 +1,7 @@
 package POO;
 
 import javax.swing.JOptionPane;
+import java.util.Arrays;
 
 public class PruebaFinal {
 
@@ -18,6 +19,8 @@ public class PruebaFinal {
 			Jefe jefeCastTest = (Jefe)misEmpleados[3];
 			jefeCastTest.setAumento(50);
 		misEmpleados[0].changeSection("Sistemas");
+
+		Arrays.sort(misEmpleados);
 
 
 		//System.out.println(returnEmpleadoObject(empleado1));
@@ -39,7 +42,7 @@ public class PruebaFinal {
 
 }
 
-class Empleados{
+class Empleados implements Comparable{
 	
 	private String name;
 	private String section;
@@ -78,8 +81,21 @@ class Empleados{
 	{
 		return "Nombre: "+name+" - Seccion: "+section+" COD:"+code+" ID:"+id+" Sueldo:"+sueldo;
 	}
-	
-	
+
+
+	@Override
+	public int compareTo(Object obj) {
+		Empleados otroEmpleado = (Empleados)obj;
+		if (this.sueldo<otroEmpleado.sueldo)
+		{
+			return -1;
+		}
+		if (this.sueldo>otroEmpleado.sueldo)
+		{
+			return 1;
+		}
+		return 0;
+	}
 }
 
 final class Jefe extends Empleados{ //using final to stop heritage from Jefe class
