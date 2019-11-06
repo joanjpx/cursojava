@@ -1,8 +1,5 @@
 package swing;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
-import javax.swing.*;
 
 public class Index {
 
@@ -12,9 +9,10 @@ public class Index {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Toolkit TK = Toolkit.getDefaultToolkit();
-		Dimension screenSize = TK.getScreenSize();
-		Frame1 frame = new Frame1(screenSize.width/4,screenSize.height/4);
+
+		Frame1 frame = new Frame1(300,300,"Frame1");
+		frame.setFrameToCenter(true);
+		frame.setFrameIcon("C:/Users/Usuario/Downloads/e536f1c455971518335bccb0a63f2b5e.JPG");
 		
 	}
 
